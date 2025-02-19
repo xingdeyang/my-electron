@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎使用 Electron</h1>
+        <p>这是一个简单的 Electron 应用程序示例。</p>
+        <button id="clickMe">点击我</button>
+    </div>
+    <script src="front.js"></script>
+    <script>
+        document.getElementById('clickMe').addEventListener('click', () => {
+            alert('按钮被点击了！');
+        });
+    </script>
+</body>
+</html>
